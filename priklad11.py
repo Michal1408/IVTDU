@@ -1,4 +1,9 @@
-N=int(input("N:"))
-for i in range(0,N+1):
-    if i%4==0 and i%7==0:
-        print(i)
+n = int(input("Zadaj číslo: "))
+delitel = 2
+print("Prvočíselný rozklad:", end=" ")
+while n > 1:
+    if n % delitel == 0:
+        print(delitel, end=" ")
+        n = n // delitel
+    else:
+        delitel = delitel + 1

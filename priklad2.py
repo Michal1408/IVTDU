@@ -1,12 +1,9 @@
-
-
-N = int(input("N="))
-print("Moznost a:")
-for i in range(1,N+1):
-    print(i)
-print("Moznost b:")
-for i in range(1,N+1):
-    if i<N:
-        print(i, end=",")
-    else:
-        print(i)
+N=int(input('N='))
+par=0
+cif=0
+while N>0:
+    cif=N%10
+    if cif%2==0:
+        par=par+1
+    N//=10
+print(par)

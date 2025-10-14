@@ -1,6 +1,5 @@
-N=int(input("N:"))
-for i in range(1,N+1):
-    if N+1-i !=1:
-        print(N+1-i,end=",")
-    else:
-        print(1)
+N=int(input("N="))
+if N%2==0 or N%3==0 or N%5==0 or N%7==0:
+    print("Nie je prvocislo")
+else:
+    print("Je prvocislo")

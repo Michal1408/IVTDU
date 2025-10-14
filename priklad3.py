@@ -1,6 +1,6 @@
-N=int(input("N:"))
-if N>4:
-    for i in range(5,N+1,2):
-        print(i, end=",")
-else:
-    print("Zadaj cislo N>4")
+N=int(input('N='))
+cif=0
+while N>0:
+    cif=cif+1
+    N//=10
+print(cif)
