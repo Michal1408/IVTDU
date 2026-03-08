@@ -1,5 +1,5 @@
 from PIL import Image
-pic = Image.open("Epstein.jpg")
+pic = Image.open("../files/Epstein.jpg")
 pixel = pic.load()
 for x in range(pic.size[0]):
     for y in range(pic.size[1]):
